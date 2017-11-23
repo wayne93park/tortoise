@@ -1,0 +1,359 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+}
+p{
+  line-height: 1.4;
+}
+body{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  width: 100%;
+  background-image: url("../glasses-bg.png");
+  background-size: cover;
+  height:31rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+/*header*/
+
+.header{
+  width: 960px;
+  height: 3rem;
+  background-color: cadetblue;
+  font-family: Helvetica;
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+
+.header img{
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.menu span{
+  margin-right: 2rem;s
+}
+
+.menu span a{
+  color: white;
+  text-decoration: none;
+}
+
+/*phrase*/
+.phrase-box{
+  display: flex;
+  margin-top: 14rem;
+  margin-right:-2rem;
+  padding: 0;
+  height: 5rem;
+  width: 960px;
+  justify-content: flex-end;
+}
+
+.phrase{
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+/*icons*/
+.main{
+    display:flex;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  height: 8rem;
+  width: 100%;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-left:6rem;
+  height: 8rem;
+}
+.icon1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 8rem;
+}
+
+.icon-text{
+  font-family: Helvetica;
+  text-align: center;
+}
+
+#paper{
+  width: 3.5rem;
+}
+
+#ruler{
+  width: 5rem;
+}
+
+#truck{
+  width: 5rem;
+}
+
+/*CONTENT*/
+.content-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 67%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.content1{
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  font-family: Helvetica;
+  margin-right: 5%;
+}
+.content{
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  font-family: Helvetica;
+}
+
+.content-title{
+  font-weight: bold;
+  color:white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  width: 10rem;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+/*footer*/
+footer{
+  padding-left: 4rem;
+  display: flex;
+  height: 9.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: azure;
+  font-family: Helvetica;
+}
+
+footer img{
+  height:1.5rem;
+  margin-right: 1rem;
+}
+
+#mobile{
+  display:none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner{
+    height:22rem;
+  }
+
+  .header{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .phrase-box{
+    display: flex;
+    margin-top: 8rem;
+    padding: 0;
+    height: 2.83rem;
+    margin-right: 2rem;
+    width: 100%;
+  }
+
+  .phrase{
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  .banner{
+    height:17rem;
+  }
+
+  .header{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .phrase-box{
+    display: flex;
+    margin: 12rem 0 0 0;
+    padding: 0;
+    height: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .phrase{
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #desktop{
+    display:none;
+  }
+
+  #mobile{
+    display: inline;
+  }
+
+  .main{
+      display:flex;
+      justify-content: center;
+      margin-top: 3.77rem;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
+    margin-bottom:3.77rem;
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:1.54rem;
+    margin-left:0rem;
+    height:auto;
+  }
+  .icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+  }
+
+  .icon-text{
+    font-family: Helvetica;
+    font-size:0.77rem;
+    margin-top:1rem;
+    text-align: center;
+  }
+
+  #mobile1{
+    display:none;
+  }
+
+  /*CONTENT*/
+  .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top:0;
+    width: 100%;
+    margin-bottom: 0rem;
+    flex-direction: column;
+  }
+
+  .content1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Helvetica;
+    margin-right: 0%;
+  }
+  .content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Helvetica;
+  }
+
+  .content-title{
+    font-weight: bold;
+    width:100%;
+    color:white;
+    padding: 0.5rem 0;
+    background-color: cadetblue;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .content-text{
+    font-size:0.77rem;
+    padding-bottom: 4rem;
+  }
+
+
+  footer{
+    padding-left: 0rem;
+    display: flex;
+    height: 9.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    font-family: Helvetica;
+  }
+
+}
